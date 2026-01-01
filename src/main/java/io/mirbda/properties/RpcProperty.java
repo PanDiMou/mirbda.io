@@ -1,0 +1,46 @@
+package io.mirbda.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "rpc")
+public record RpcProperty(
+        String baseUrl,
+        String version,
+        String infoMethod,
+        String blockMethod,
+        String txOutMethod,
+        String uptimeMethod,
+        String peerInfoMethod,
+        String blockHashMethod,
+        String indexInfoMethod,
+        String netTotalsMethod,
+        String chainTipsMethod,
+        String rawMempoolMethod,
+        String txOutProofMethod,
+        String memoryInfoMethod,
+        String listBannedMethod,
+        String blockStatsMethod,
+        String miningInfoMethod,
+        String difficultyMethod,
+        String blockHeaderMethod,
+        String blockCountMethod,
+        String networkInfoMethod,
+        String mempoolInfoMethod,
+        String txOutSetInfoMethod,
+        String decodeScriptMethod,
+        String chainTxStatsMethod,
+        String mempoolEntryMethod,
+        String bestBlockHashMethod,
+        String networkHashPsMethod,
+        String nodeAddressesMethod,
+        String rawTransactionMethod,
+        String deploymentInfoMethod,
+        String connectionCountMethod,
+        String validateAddressMethod,
+        String mempoolAncestorsMethod,
+        String verifyTxOutProofMethod,
+        String estimateSmartFeeMethod,
+        String testMempoolAcceptMethod,
+        String mempoolDescendantsMethod,
+        String decodeRawTransactionMethod
+) { }

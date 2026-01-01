@@ -1,0 +1,6 @@
+rpc:
+  base-url: "${RPC_BASE_URL}"
+app:
+  zmq:
+    hashblock-url: ""
+    hashtx-url: ""

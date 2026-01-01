@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: mirbda.io
+  webflux:
+    hiddenmethod:
+      filter:
+        enabled: false
+server:
+  port: 7777
+  netty:
+    connection-timeout: 10s
+app:
+  zmq:
+    hashtx-url: "tcp://bitcoin:28333"
+    hashblock-url: "tcp://bitcoin:28332"
+rpc:
+  base-url: "${RPC_BASE_URL}"
+  version: "1.0"
+  best-block-hash-method: "getbestblockhash"
+  block-method: "getblock"
+  info-method: "getblockchaininfo"
+  block-count-method: "getblockcount"
+  block-hash-method: "getblockhash"
+  block-header-method: "getblockheader"
+  block-stats-method: "getblockstats"
+  deployment-info-method: "getdeploymentinfo"
+  chain-tips-method: "getchaintips"
+  chain-tx-stats-method: "getchaintxstats"
+  difficulty-method: "getdifficulty"
+  mempool-info-method: "getmempoolinfo"
+  mempool-entry-method: "getmempoolentry"
+  tx-out-method: "gettxout"
+  tx-out-proof-method: "gettxoutproof"
+  verify-tx-out-proof-method: "verifytxoutproof"
+  raw-mempool-method: "getrawmempool"
+  tx-out-set-info-method: "gettxoutsetinfo"
+  raw-transaction-method: "getrawtransaction"
+  decode-raw-transaction-method: "decoderawtransaction"
+  connection-count-method: "getconnectioncount"
+  uptime-method: "uptime"
+  network-info-method: "getnetworkinfo"
+  mining-info-method: "getmininginfo"
+  estimate-smart-fee-method: "estimatesmartfee"
+  net-totals-method: "getnettotals"
+  list-banned-method: "listbanned"
+  peer-info-method: "getpeerinfo"
+  mempool-ancestors-method: "getmempoolancestors"
+  mempool-descendants-method: "getmempooldescendants"
+  validate-address-method: "validateaddress"
+  decode-script-method: "decodescript"
+  node-addresses-method: "getnodeaddresses"
+  memory-info-method: "getmemoryinfo"
+  network-hash-ps-method: "getnetworkhashps"
+  index-info-method: "getindexinfo"
+  test-mempool-accept-method: "testmempoolaccept"
